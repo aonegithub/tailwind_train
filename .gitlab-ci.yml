@@ -15,7 +15,7 @@ deploy_job:
 #    - git pull https://"$REPO_USER":"$REPO_PASS"@git.ezvh.tw/"$REPO_USER"/"$REPO_NAME".git
     - rm -rf .env
     - cp -f master.env .env
-    - composer update
+    - composer install --ignore-platform-reqs
     - composer dump-autoload
     - php80 artisan migrate --force -v
     - php80 artisan optimize:clear
