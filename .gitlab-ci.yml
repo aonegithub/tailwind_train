@@ -1,0 +1,23 @@
+stages:
+  - deploy
+
+deploy_job:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - train
+  script:
+    - rsync -ruog --delete --exclude '.git' --exclude '.gitignore' --exclude 'storage' ./   /volume1/web/tools
+    - cd /volume1/web/tools
+    - rm -rf ./public/js/app.js
+    - rm -rf ./public/css/app.css
+#    - git pull https://"$REPO_USER":"$REPO_PASS"@git.ezvh.tw/"$REPO_USER"/"$REPO_NAME".git
+    - rm -rf .env
+    - cp -f master.env .env
+    - composer update
+    - composer dump-autoload
+    - php80 artisan migrate --force -v
+    - php80 artisan optimize:clear
+#    - php80 artisan queue:restart
+    - npm run build
