@@ -19,4 +19,5 @@ deploy_job:
     - php82 artisan migrate
     - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
+    - npm install vite
     - npm run build
