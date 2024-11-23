@@ -17,7 +17,7 @@ deploy_job:
     - cp -f master.env .env
     - composer install --ignore-platform-reqs
     - composer dump-autoload
-    - php80 artisan migrate --force -v
-    - php80 artisan optimize:clear
+    - php artisan migrate --force -v
+    - php artisan optimize:clear
 #    - php80 artisan queue:restart
     - npm run build
