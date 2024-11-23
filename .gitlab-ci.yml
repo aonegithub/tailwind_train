@@ -16,7 +16,6 @@ deploy_job:
     - rm -rf .env
     - cp -f master.env .env
     - php82 composer.phar install
-    - php82 composer.phar install
     - php82 artisan migrate --force -v
     - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
