@@ -20,4 +20,4 @@ deploy_job:
     - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
     - npm install
-    - npm run build
+    - npm run prod
