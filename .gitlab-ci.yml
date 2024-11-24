@@ -10,8 +10,8 @@ deploy_job:
   script:
     - rsync -ruog --delete --exclude '.git' --exclude '.gitignore' --exclude 'storage' ./   /volume1/web/tools
     - cd /volume1/web/tools
-    # - rm -rf ./public/js/app.js
-    # - rm -rf ./public/css/app.css
+    - rm -rf ./public/js/app.js
+    - rm -rf ./public/css/app.css
 #    - git pull https://"$REPO_USER":"$REPO_PASS"@git.ezvh.tw/"$REPO_USER"/"$REPO_NAME".git
     - rm -rf .env
     - cp -f master.env .env
@@ -19,5 +19,5 @@ deploy_job:
     - php82 artisan migrate
     - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
-    # - npm install vite
-    # - npm run build
+    - npm install vite
+    - npm run build
