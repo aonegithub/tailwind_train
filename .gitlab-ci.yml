@@ -19,6 +19,6 @@ deploy_job:
     - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
     - npm install -D tailwindcss postcss autoprefixer
-    - npx tailwindcss init -p
+#    - npx tailwindcss init -p
     - npm install
     - npm run build
