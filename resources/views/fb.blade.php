@@ -9,7 +9,7 @@
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-gray-800">
+<body class="bg-fb-bg">
 
 <div id="app"></div>
 </body>

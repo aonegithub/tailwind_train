@@ -190,7 +190,7 @@
     lg:items-center
     lg:h-full
     flex absolute top-0 left-0 right-0 w-full h-full bg-black/70 justify-center items-start">
-        <div id="modal-content" class="w-[90%] p-4 bg-white mt-[150px] rounded-lg lg:mt-0">
+        <div id="modal-content" class="w-[90%] text-primary p-4 bg-white mt-[150px] rounded-lg lg:mt-0">
             <p class="font-bold">LOGIN</p>
             <div class="mb-10">
                 <p class="">帳號:</p>
