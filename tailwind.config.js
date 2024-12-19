@@ -1,4 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import cssnanoPlugin from "cssnano";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -13,10 +14,22 @@ export default {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            colors:{
+                'primary': '#4f3cc9',
+                'primary-dark': '#4232aa',
+                'secondary': '#ffffff',
             },
+            // fontFamily: {
+            //     sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            // },
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+        require('cssnano')({
+            preset:'default',
+        }),
+    ],
 };
