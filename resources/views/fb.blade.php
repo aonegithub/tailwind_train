@@ -11,7 +11,7 @@
 </head>
 <body class="bg-fb-bg">
 <div id="app">
-    @vite(['resources/ccss/fb.css', 'resources/js/app.js'])
+{{--    @vite(['resources/ccss/fb.css', 'resources/js/app.js'])--}}
 <header class="bg-fb-header w-full h-[56px] fixed top-0 left-0 right-0 flex justify-between items-center px-4 z-20">
     {{--    header 左--}}
     <div class="flex items-center">
@@ -330,7 +330,7 @@
 </main>
 
 
-@vite(['resources/js/fb-index.js', 'resources/js/app.js'])
+{{--@vite(['resources/js/fb-index.js', 'resources/js/app.js'])--}}
 </div>
 </body>
 </html>
