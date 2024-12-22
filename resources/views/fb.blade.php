@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/fb.css')
+    @vite(['resources/ccss/fb.css', 'resources/js/app.js'])
 
     <title>Document</title>
 </head>
@@ -328,6 +328,7 @@
 </main>
 
 
-@vite('resources/js/fb-index.js')
+@vite(['resources/js/fb-index.js', 'resources/js/app.js'])
+
 </body>
 </html>
