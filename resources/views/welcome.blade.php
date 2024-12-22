@@ -12,9 +12,11 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
 
     <!-- Styles / Scripts -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 
 </head>
+<div id="app">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 <body class="bg-[#E5E5E5] relative lg:h-screen">
     <div class="p-4 lg:p-8">
         <div class="flex justify-between items-start lg:max-w-[1280px] lg:mx-auto">
@@ -225,8 +227,8 @@
             </button>
         </div>
     </div>
-    <div id="app"></div>
-    @vite(['resources/js/index.js', 'resources/js/app.js'])
 
+    @vite(['resources/js/index.js', 'resources/js/app.js'])
+    </div>
 </body>
 </html>
