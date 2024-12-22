@@ -16,10 +16,11 @@ deploy_job:
     - cp master.env .env
     - php82 ~/composer.phar install
     - php82 artisan migrate
-    - php82 artisan optimize:clear
+    # - php82 artisan optimize:clear
 #    - php80 artisan queue:restart
     - npm install -D tailwindcss postcss autoprefixer
 #    - npx tailwindcss init -p
     - npm install
+    - php82 artisan optimize:clear
     # - npm run dev
     - npm run build
