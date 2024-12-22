@@ -1,8 +1,10 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import cssnanoPlugin from "cssnano";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode:false,
+    mode:'jit',
+    darkMode:'false',
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
@@ -12,10 +14,29 @@ export default {
     ],
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            spacing:{
+                'main-span': '72px'
             },
+            colors:{
+                'fb-bg': '#18191a',
+                'fb-header': '#242526',
+                'fb-input': '#3a3b3c',
+                'fb-popover': '#3e4042',
+                'fb-active': '#323436',
+                'fb-card': '#242526',
+                'fb': '#2e89ff',
+            },
+            // fontFamily: {
+            //     sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            // },
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+        require('cssnano')({
+            preset:'default',
+        }),
+    ],
 };
