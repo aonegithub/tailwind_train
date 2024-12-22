@@ -14,10 +14,10 @@ export default {
     ],
     theme: {
         extend: {
+            spacing:{
+                'main-span': '72px'
+            },
             colors:{
-                'primary': '#4f3cc9',
-                'primary-dark': '#4232aa',
-                'secondary': '#ffffff',
                 'fb-bg': '#18191a',
                 'fb-header': '#242526',
                 'fb-input': '#3a3b3c',
