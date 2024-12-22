@@ -8,7 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/fb-index.js',
-                'resources/js/fb.js',
+                'resources/css/fb.css',
             ],
             refresh: true,
         }),
