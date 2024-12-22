@@ -330,7 +330,7 @@
 </main>
 
 
-@vite(['resources/js/fb-index.js', 'resources/js/app.js'])
+@vite(['resources/js/fb.js', 'resources/js/app.js'])
 <div id="app">
 </div>
 </body>
