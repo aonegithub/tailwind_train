@@ -6,12 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Document</title>
 </head>
 <body class="bg-fb-bg">
 
-    @vite(['resources/css/fb.css', 'resources/js/app.js'])
+
 <header class="bg-fb-header w-full h-[56px] fixed top-0 left-0 right-0 flex justify-between items-center px-4 z-20">
     {{--    header 左--}}
     <div class="flex items-center">
