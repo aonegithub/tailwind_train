@@ -175,10 +175,10 @@ function renderRightBlock() {
     class="
       flex
       items-center
-      justify-items-center
+      justify-items-right
       w-full
       py-2
-      px-1
+      px-10
       rounded
       hover:bg-fb-input
       cursor-pointer
@@ -207,7 +207,7 @@ function renderRightBlock() {
   </div>
 `;
 
-    let htmStr = '<p class="mb-2 text-lg text-gray-400">聯絡人</p>';
+    let htmStr = '<p class="mb-2 text-lg text-gray-400 px-10">聯絡人</p>';
     for (let i = 0; i < 10; i++) {
         htmStr = htmStr + rightItem;
     }

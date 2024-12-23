@@ -225,7 +225,8 @@
     <p id="left-block"
        class="
        hidden
-        absolute
+        sticky
+        sticky
         top-main-span
         max-w-[360px]
         w-full
@@ -237,14 +238,15 @@
 
     {{--    動態牆--}}
     <div class="max-w-[744px] w-full mx-auto px4">
-{{--        牆外圍--}}
+        {{--        牆外圍--}}
         <div class="relative">
 
             <div class="flex overflow-x-auto" id="story-list">
                 <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer">
                     <div class="h-full flex flex-col">
                         <div class="h-full overflow-hidden">
-                            <img class="object-cover w-full h-full duration-500 hover:scale-105" src="https://bruce-fe-fb.web.app/image/avator.png" />
+                            <img class="object-cover w-full h-full duration-500 hover:scale-105"
+                                 src="https://bruce-fe-fb.web.app/image/avator.png"/>
                         </div>
                         <div class="bg-fb-card pt-6 px-2 pb-2 relative">
                             <button
@@ -264,7 +266,7 @@
                       items-center
                     "
                             >
-                                <img src="https://bruce-fe-fb.web.app/image/plus.svg" />
+                                <img src="https://bruce-fe-fb.web.app/image/plus.svg"/>
                             </button>
                             <p class="w-full text-center text-white">建立限時動態</p>
                         </div>
@@ -273,49 +275,98 @@
 
                 <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer">
                     <div class="relative">
-                        <div class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
+                        <div
+                            class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
                             <p class="text-white text-sm">布</p>
                         </div>
-                        <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
-                        <img class="w-full h-full duration-500 hover:scale-105" src="https://bruce-fe-fb.web.app/image/story.png" />
+                        <div
+                            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+                        <img class="w-full h-full duration-500 hover:scale-105"
+                             src="https://bruce-fe-fb.web.app/image/story.png"/>
                         <p class="absolute bottom-2 left-2 text-white">布魯斯</p>
                     </div>
                 </div>
 
                 <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer">
                     <div class="relative">
-                        <div class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
+                        <div
+                            class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
                             <p class="text-white text-sm">布</p>
                         </div>
-                        <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
-                        <img class="w-full h-full duration-500 hover:scale-105" src="https://bruce-fe-fb.web.app/image/story.png" />
+                        <div
+                            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+                        <img class="w-full h-full duration-500 hover:scale-105"
+                             src="https://bruce-fe-fb.web.app/image/story.png"/>
                         <p class="absolute bottom-2 left-2 text-white z-10">布魯斯</p>
                     </div>
                 </div>
 
                 <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer">
                     <div class="relative">
-                        <div class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
+                        <div
+                            class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
                             <p class="text-white text-sm">布</p>
                         </div>
-                        <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
-                        <img class="w-full h-full duration-500 hover:scale-105" src="https://bruce-fe-fb.web.app/image/story.png" />
+                        <div
+                            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+                        <img class="w-full h-full duration-500 hover:scale-105"
+                             src="https://bruce-fe-fb.web.app/image/story.png"/>
                         <p class="absolute bottom-2 left-2 text-white z-10">布魯斯</p>
                     </div>
                 </div>
 
                 <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer">
                     <div class="relative">
-                        <div class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
+                        <div
+                            class="w-[32px] h-[32px] absolute top-4 left-4 ring-4 ring-fb bg-fb-card rounded-full flex justify-center items-center z-10">
                             <p class="text-white text-sm">布</p>
                         </div>
-                        <div class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
-                        <img class="w-full h-full duration-500 hover:scale-105" src="https://bruce-fe-fb.web.app/image/story.png" />
+                        <div
+                            class="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+                        <img class="w-full h-full duration-500 hover:scale-105"
+                             src="https://bruce-fe-fb.web.app/image/story.png"/>
                         <p class="absolute bottom-2 left-2 text-white z-10">布魯斯</p>
                     </div>
                 </div>
 
             </div>
+
+        </div>
+        <div class="w-full rounded-lg bg-fb-card mt-3 p-3">
+            <div class="flex relative items-center">
+                <div class="max-w-[50px] overflow-hidden object-contain rounded-full">
+                    <div class=""><img src="https://bruce-fe-fb.web.app/image/avator.png" alt=""></div>
+                </div>
+                <div class="bg-fb-input rounded-full w-full pl-5 ml-3">
+                    <input type="text" placeholder="想什麼呢?.." class="input-noline bg-fb-input rounded-full ">
+                </div>
+
+            </div>
+            <div class="bg-fb-input mt-3 w-full h-[2px]">
+            </div>
+
+            <div class="border-t border-gray-700 flex pt-3">
+                <button class="flex-1 h-[40px] rounded-lg hover:bg-fb-input flex items-center justify-center">
+                    <div class="w-[16px]">
+                        <img src="https://bruce-fe-fb.web.app/image/camera.svg" alt=""/>
+                    </div>
+                    <p class="text-gray-400 text-sm pl-1.5">直播視訊</p>
+                </button>
+                <button class="flex-1 h-[40px] rounded-lg hover:bg-fb-input flex items-center justify-center">
+                    <div class="w-[16px]">
+                        <img src="https://bruce-fe-fb.web.app/image/photo.svg" alt=""/>
+                    </div>
+                    <p class="text-gray-400 text-sm pl-1.5">相片／影片</p>
+                </button>
+                <button class="flex-1 h-[40px] rounded-lg hover:bg-fb-input flex items-center justify-center">
+                    <div class="w-[16px]">
+                        <img src="https://bruce-fe-fb.web.app/image/feel.svg" alt=""/>
+                    </div>
+                    <p class="text-gray-400 text-sm pl-1.5">感受／活動</p>
+                </button>
+            </div>
+            <div class=""></div>
+            <div class=""></div>
 
         </div>
     </div>
