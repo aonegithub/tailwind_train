@@ -218,7 +218,7 @@
     </div>
 </div>
 
-@vite(['resources/js/fb.js', 'resources/js/app.js'])
+@vite(['resources/js/app.js', 'resources/js/app.js'])
 <div id="app">
 </div>
 </body>
